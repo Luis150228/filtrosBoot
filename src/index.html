@@ -142,12 +142,165 @@
 		</svg>
 		<main>
 			<h1 class="visually-hidden">Features examples</h1>
+
+			<div class="container" id="icon-grid">
+				<h2 class="pb-2 border-bottom">Captura</h2>
+
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+					<!-- Inicio Tarjeta -->
+					<div class="col d-flex align-items-start">
+						<form class="form">
+							<div class="form-body">
+								<h4 class="form-section">
+									<i class="ft-user"></i>Familia Rangel Jimenez
+								</h4>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="projectinput1">Nombre Completo</label>
+											<input
+												type="text"
+												id="projectinput1"
+												class="form-control"
+												placeholder="Nombre Completo"
+												name="fname"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="projectinput2">Origen</label>
+											<input
+												type="text"
+												id="projectinput2"
+												class="form-control"
+												placeholder="Lugar de Nacimiento"
+												name="nac"
+											/>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="projectinput3">Edad</label>
+											<input
+												type="number"
+												id="projectinput3"
+												class="form-control"
+												placeholder="Edad"
+												name="edad"
+											/>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="projectinput4">Genero</label>
+											<select
+												name="genero"
+												id="projectinput4"
+												class="form-control"
+												required
+											>
+												<option selected value="">Seleccione Genero</option>
+												<option value="Femenino">Femenino</option>
+												<option value="Masculino">Masculino</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="projectinput5">Parentesco</label>
+											<select
+												name="parentesco"
+												id="projectinput5"
+												class="form-control"
+												required
+											>
+												<option selected value="">Seleccione Parentesco</option>
+												<option value="Abuelo">Abuelo</option>
+												<option value="Padre">Padre</option>
+												<option value="Tio">Tio</option>
+												<option value="Hijo">Hijo</option>
+												<option value="Primo">Primo</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="projectinput6">Ubicacion</label>
+											<input
+												type="text"
+												id="projectinput6"
+												class="form-control"
+												placeholder="Lugar de recidencia"
+												name="recidencia"
+											/>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="projectinput7">Vivo</label>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input
+														type="checkbox"
+														class="form-check-input"
+														name=""
+														id=""
+														value="checkedValue"
+														checked
+													/>
+													Vive
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- <div class="form-group">
+										<label for="projectinput8">About Project</label>
+										<textarea
+											id="projectinput8"
+											rows="5"
+											class="form-control"
+											name="comment"
+											placeholder="About Project"
+										></textarea>
+									</div> -->
+							</div>
+							<div class="row">
+								<br />
+								<div class="form-actions">
+									<button type="button" class="btn btn-warning mr-1">
+										<i class="ft-x"></i> Cancel
+									</button>
+									<button type="submit" class="btn btn-primary">
+										<i class="la la-check-square-o"></i> Save
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- Fin Tarjeta -->
+				</div>
+			</div>
+
 			<div class="b-example-divider"></div>
 
 			<div class="container px-4 py-5" id="icon-grid">
 				<h2 class="pb-2 border-bottom">Familia</h2>
 
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+				<div
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
+					id="seccion"
+				>
 					<!-- Inicio Tarjeta -->
 					<div class="col d-flex align-items-start">
 						<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
