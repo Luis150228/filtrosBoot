@@ -1,6 +1,6 @@
 import './styles.css';
 import {Persona, ArbolFamiliar} from './classes';
-import {addPariente} from './js/componentes';
+import {addPariente} from './js';
 
 export const aitaiteki = new ArbolFamiliar();
 
