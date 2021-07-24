@@ -1,7 +1,8 @@
 import './styles.css';
 import {Persona, ArbolFamiliar} from './classes';
+import {addPariente} from './js/componentes';
 
-const aitaiteki = new ArbolFamiliar();
+export const aitaiteki = new ArbolFamiliar();
 
 const individuo = new Persona(
 	'Fernando Rangel Mendoza',
@@ -15,3 +16,5 @@ const individuo = new Persona(
 aitaiteki.nuevoFamiliar(individuo);
 
 console.log(aitaiteki);
+
+addPariente(individuo);
