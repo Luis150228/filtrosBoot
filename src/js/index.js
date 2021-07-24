@@ -1,3 +1,3 @@
-import {addPariente} from './componentes';
+import {addPariente} from './tarjeta';
 
 export {addPariente};
