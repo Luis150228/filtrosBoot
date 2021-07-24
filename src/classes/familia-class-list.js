@@ -12,5 +12,6 @@ export class ArbolFamiliar {
 	familiaTotal() {
 		const filtroFamilia = this.individuos.filter((x) => x.vivo == true);
 		const famNum = filtroFamilia.length;
+		console.log('Familiares: ', famNum);
 	}
 }

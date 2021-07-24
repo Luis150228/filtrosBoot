@@ -18,3 +18,5 @@ aitaiteki.nuevoFamiliar(individuo);
 console.log(aitaiteki);
 
 addPariente(individuo);
+
+aitaiteki.familiaTotal();
