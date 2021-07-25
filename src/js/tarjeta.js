@@ -13,21 +13,21 @@ const pariente = document.querySelector('#projectinput5');
 const recidencia = document.querySelector('#projectinput6');
 const vivo = document.querySelector('#projectinput7');
 
-export const addPariente = (lapersona) => {
+export const addPariente = (arrayIndividuo) => {
 	const crearTarjeta = `
 					<div class="col d-flex align-items-start">
 						<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
 							<use xlink:href="#bootstrap" />
 						</svg>
-						<div person-id="${lapersona.id}">
-							<h2 class="fw-bold mb-0">${lapersona.nombre}</h2>
-							<h4 class="fw-bold mb-0">${lapersona.parentesco}</h4>
-							<p>Nacio en: <strong>${lapersona.nac}</strong></p>
-							<p>Radica en: <strong>${lapersona.ubicacion}</strong></p>
-							<p>Edad: <strong>${lapersona.edad}</strong></p>
+						<div person-id="${arrayIndividuo.id}">
+							<h2 class="fw-bold mb-0">${arrayIndividuo.nombre}</h2>
+							<h4 class="fw-bold mb-0">${arrayIndividuo.parentesco}</h4>
+							<p>Nacio en: <strong>${arrayIndividuo.nac}</strong></p>
+							<p>Radica en: <strong>${arrayIndividuo.ubicacion}</strong></p>
+							<p>Edad: <strong>${arrayIndividuo.edad}</strong></p>
               <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" ${
-									lapersona.vivo ? 'checked' : ''
+									arrayIndividuo.vivo ? 'checked' : ''
 								}/>
 							Vive</label>
 						</div>
@@ -43,9 +43,10 @@ export const addPariente = (lapersona) => {
 };
 
 personForm.addEventListener('submit', (e) => {
+	///Si se da clic en el submit se toman los valores del formulario
 	e.preventDefault();
 	if (nombre.value.length > 0 && edad.value > 0) {
-		const addPersona = new Persona(
+		const addFormPersona = new Persona(
 			nombre.value,
 			edad.value,
 			origen.value,
@@ -55,8 +56,8 @@ personForm.addEventListener('submit', (e) => {
 			vivo.value
 		);
 
-		aitaiteki.nuevoFamiliar(addPersona);
-		addPariente(addPersona);
+		aitaiteki.nuevoFamiliar(addFormPersona);
+		addPariente(addFormPersona);
 
 		nombre.value = '';
 		edad.value = '';

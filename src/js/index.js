@@ -1,3 +1,4 @@
 import {addPariente} from './tarjeta';
+import {totalFamilia} from './totalFamilia';
 
-export {addPariente};
+export {addPariente, totalFamilia};

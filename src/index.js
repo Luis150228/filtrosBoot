@@ -1,6 +1,6 @@
 import './styles.css';
 import {Persona, ArbolFamiliar} from './classes';
-import {addPariente} from './js';
+import {addPariente, totalFamilia} from './js';
 
 export const aitaiteki = new ArbolFamiliar();
 
@@ -13,10 +13,21 @@ const individuo = new Persona(
 	'Gto'
 );
 
-aitaiteki.nuevoFamiliar(individuo);
+const individuo2 = new Persona(
+	'Derek Rangel Jimenez',
+	4,
+	'Celaya',
+	'Masculino',
+	'Hijo',
+	'Gto'
+);
 
-console.log(aitaiteki);
+aitaiteki.nuevoFamiliar(individuo);
+aitaiteki.nuevoFamiliar(individuo2);
 
 addPariente(individuo);
+addPariente(individuo2);
 
-aitaiteki.familiaTotal();
+console.log('ArbolFamiliar :', aitaiteki); ///Es el objeto con su array
+// aitaiteki.familiaTotal(); //Total familiares
+totalFamilia(aitaiteki.familiaTotal()); //// Se agrega la funcion que crea la etiqueta para mostrar el total de los familiares registrados
