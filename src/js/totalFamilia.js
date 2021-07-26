@@ -8,7 +8,7 @@ export const totalFamilia = (valor) => {
 	const strong = document.createElement('div');
 	strong.innerHTML = txtStrong;
 
-	totalMiebros.appendChild(strong);
+	totalMiebros.appendChild(strong.firstChild);
 
-	return strong;
+	return strong.firstChild;
 };
