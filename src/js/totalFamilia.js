@@ -1,5 +1,6 @@
 // se crea funcion en base al valor del array para generar el total de familiares
 
+//Referencias
 const totalMiebros = document.querySelector('#ftotal');
 
 export const totalFamilia = (valor) => {

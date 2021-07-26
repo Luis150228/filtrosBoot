@@ -2,32 +2,29 @@ import './styles.css';
 import {Persona, ArbolFamiliar} from './classes';
 import {addPariente, totalFamilia} from './js';
 
+const personForm = document.querySelector('#person-form');
+
 export const aitaiteki = new ArbolFamiliar();
 
-const individuo = new Persona(
+/*const individuo = new Persona(
 	'Fernando Rangel Mendoza',
 	70,
 	'CDMX',
 	'Masculino',
 	'Abuelo',
 	'Gto'
-);
+);*/
 
-const individuo2 = new Persona(
-	'Derek Rangel Jimenez',
-	4,
-	'Celaya',
-	'Masculino',
-	'Hijo',
-	'Gto'
-);
+// aitaiteki.nuevoFamiliar(individuo);
 
-aitaiteki.nuevoFamiliar(individuo);
-aitaiteki.nuevoFamiliar(individuo2);
+// addPariente(individuo);
 
-addPariente(individuo);
-addPariente(individuo2);
-
-console.log('ArbolFamiliar :', aitaiteki); ///Es el objeto con su array
+// console.log('ArbolFamiliar :', aitaiteki); ///Es el objeto con su array
 // aitaiteki.familiaTotal(); //Total familiares
+
+// aitaiteki.nuevoFamiliar.forEach((delStorage) => addPariente(delStorage));
 totalFamilia(aitaiteki.familiaTotal()); //// Se agrega la funcion que crea la etiqueta para mostrar el total de los familiares registrados
+
+aitaiteki.individuos.forEach((delStorage) => addPariente(delStorage)); //Crea tarjetas con el contenido del storage
+
+console.log(aitaiteki.individuos);
