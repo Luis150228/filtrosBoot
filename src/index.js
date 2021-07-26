@@ -1,8 +1,6 @@
 import './styles.css';
 import {Persona, ArbolFamiliar} from './classes';
-import {addPariente, totalFamilia} from './js';
-
-const personForm = document.querySelector('#person-form');
+import {addPariente, totalFamilia, totalMiembros} from './js';
 
 export const aitaiteki = new ArbolFamiliar();
 
@@ -23,8 +21,11 @@ export const aitaiteki = new ArbolFamiliar();
 // aitaiteki.familiaTotal(); //Total familiares
 
 // aitaiteki.nuevoFamiliar.forEach((delStorage) => addPariente(delStorage));
-totalFamilia(aitaiteki.familiaTotal()); //// Se agrega la funcion que crea la etiqueta para mostrar el total de los familiares registrados
+
+// totalFamilia(aitaiteki.familiaTotal()); //// Se agrega la funcion que crea la etiqueta para mostrar el total de los familiares registrados
+
+totalMiembros(); ///Sirve para que cuando cargue la pagina ya tengamos el total de los familiares
 
 aitaiteki.individuos.forEach((delStorage) => addPariente(delStorage)); //Crea tarjetas con el contenido del storage
 
-console.log(aitaiteki.individuos);
+// console.log(aitaiteki.individuos, totalMiembros());

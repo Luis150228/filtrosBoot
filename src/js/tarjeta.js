@@ -1,5 +1,6 @@
 import {aitaiteki} from '..';
 import {Persona, ArbolFamiliar} from '../classes';
+import {totalMiembros} from './totalMiembros';
 
 //Referencias
 // const divSeccion = document.querySelector('seccion');///querySelector es para clases
@@ -58,6 +59,7 @@ personForm.addEventListener('submit', (e) => {
 
 		aitaiteki.nuevoFamiliar(addFormPersona);
 		addPariente(addFormPersona);
+		totalMiembros(); ///Sirve para que cuando haga submit tengamos el total de los familiares mas el nuevo
 
 		nombre.value = '';
 		edad.value = '';
